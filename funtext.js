@@ -1,6 +1,6 @@
    const frontText = document.querySelector("#frontText");
    frontText.onmouseover = function(event){
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZΓΘλβξΣΦΨΩ';
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZΓΘλβξΣΦΨΩ也弛她';
         let iteration = 0;
         setInterval(() => {
         event.target.innerText = event.target.innerText.split("")

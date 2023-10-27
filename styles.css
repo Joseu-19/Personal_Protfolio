@@ -5,7 +5,7 @@
 }
 html, body {
  height: 100%;
- background: #191919
+ background: #191919;
 }
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
@@ -21,12 +21,24 @@ h1, h2, h3, h4, h5, h6, p {
 
 .aboutMe{
     height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: blue;
-    top: 0px;
+    border-left: 2em solid #191919;
+    border-right: 2em solid #191919;
+    border-bottom: 2em solid #191919;
+    bottom: 3.5em;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+    padding: 40px;
+    width: 75%;
+    height: 50em;
+    background-color: #0990ffb7;
 }
 
 .Blog{
@@ -71,15 +83,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
 
-
-.container{
-    position: relative;
-    text-align: center;
-    padding: 40px;
-    width: 75%;
-    height: 50em;
-    background-color: #0990ffb7;
-}
 
 .container p{
     position: relative;
