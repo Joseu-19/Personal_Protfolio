@@ -18,8 +18,8 @@
         if (iteration >= event.target.dataset.value.length){
             clearInterval(interval);
         }
-        iteration += 1/5;
-        }, 20);
+        iteration += 1/4;
+        }, 45);
         frontText.onmouseover = null;
     };
     
