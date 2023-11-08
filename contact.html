@@ -12,7 +12,13 @@
       <label>
         Email:
         <br />
-        <input type="email" name="email" placeholder="Type your email here" />
+        <input
+          type="email"
+          name="email"
+          required
+          pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+          title="Please enter a valid email address"
+        />
       </label>
       <label>
         <br />
