@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="aboutstyles.css" />
+    <script src="about.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,11 +26,15 @@
       </p>
 
       <div class="projects">
-        <h1>My Projects</h1>
-
-        <a href="https://pages.github.iu.edu/jourizar/moreArrays.js/"
-          ><div class="projects"></div
-        ></a>
+        <div id="projects_child">
+          <iframe
+            src="https://joseu-19.github.io/Personal_Protfolio/"
+            frameborder="0"
+            style="height: 100%; width: 100%"
+          ></iframe>
+          <button id="preview_btn"></button>
+          >
+        </div>
       </div>
     </div>
   </body>
