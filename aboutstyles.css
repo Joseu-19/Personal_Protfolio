@@ -34,18 +34,3 @@ header a{
     background-color: aquamarine;
 }
 
-#projects_child{
-    width: 350px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: black;
-
-}
-
-#preview_btn{
-    position: absolute;
-    top: 150px;
-    height: 50px;
-    width: 100px;
-    background-color: green;
-}
