@@ -28,9 +28,100 @@ header a{
     margin-right: 15px;
 }
 
-.projects{
-    width: 100vw;
-    height: 100vh;
-    background-color: aquamarine;
+
+/* //projects goes here */
+
+.aboutmeWrapper{
+    position: relative;
+    /* background-color: black; */
 }
+
+.long-aboutme{
+    background-color: green;
+    width:40vw;
+    position: absolute;
+    top: 30%;
+    left: 320px;
+}
+
+
+
+.projects-main {
+    width: fit-content;
+    height:auto;
+    margin:60px auto; 
+    gap: 10px; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-auto-rows: 350px;
+    overflow: hidden;
+    background-color: black;
+ }
+
+ .projects-main > * {
+    border-radius: 20px;
+ }
+
+ .small_feature{
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+ }
+
+ .mid_feature{
+    position: relative;
+    grid-column: span 2;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+
+ .big_feature{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-row: span 2;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+.mega_feature{
+    position: relative;
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+ .small_feature img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(30px, 1px);
+    transform:scale(2);
+ }
+
+ .mid_feature img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform:scale(1);
+ }
+
+ .big_feature img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    transform: scale(1);
+ }
+
+
+
+
+
 

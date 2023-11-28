@@ -26,9 +26,6 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     align-items: center;
     background-color: blue;
-    border-left: 2em solid #191919;
-    border-right: 2em solid #191919;
-    border-bottom: 2em solid #191919;
     bottom: 3.5em;
 }
 
@@ -120,8 +117,6 @@ h1, h2, h3, h4, h5, h6, p {
     transition-delay: .1.5s;
 }
 
-/* Existing CSS... */
-
 /* Animation for arrow */
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
@@ -134,14 +129,11 @@ h1, h2, h3, h4, h5, h6, p {
     animation: moveUpDown 1.5s infinite; /* makes the arrow move up and down every 1.5s */
   }
   
-  /* Animation for social links */
   .social_links:hover {
     transform: scale(1.1); /* scales the hyperlink to 110% its original size on hover */
-    transition: transform 0.3s ease; /* smoothens the scaling effect */
+    transition: transform 0.4s ease; /* smoothens the scaling effect */
   }
-  
-  /* Media Queries */
-  
+
   /* Small devices */
   @media only screen and (max-width: 600px) {
       #frontText {

@@ -1,4 +1,15 @@
-   const frontText = document.querySelector("#frontText");
+
+// this makes the arrow dissapear on scroll.
+window.addEventListener('scroll', () => {
+let downArrow = document.querySelector('#downArrow');
+setTimeout(() => {
+    downArrow.style.opacity = '0';
+}, .7);
+
+});
+
+//this makes the letters scramble on hoverover
+const frontText = document.querySelector("#frontText");
    frontText.onmouseover = function(event){
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZΓΘλβξΣΦΨΩ也弛她';
         let iteration = 0;
@@ -23,6 +34,7 @@
         frontText.onmouseover = null;
     };
     
+
    
   
 
