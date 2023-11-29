@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="aboutstyles.css" />
-    <script src="about.js" defer></script>
+    <script src="carousel.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,12 +14,11 @@
       >
       <a href="about.html"><h2>About</h2></a>
     </header>
-
     <h1 style="text-align: center">About Me</h1>
-    <div class="aboutmeWrapper">
-      <img src="stockPhotos/me.jpeg" style="position: relative; left: 10px" />
 
-      <p class="long-aboutme">
+    <!-- <div class="aboutmeWrapper">
+      <div id="circle-picture"></div>
+      <p id="long-aboutme">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         amet perferendis porro tempora, odit maxime iusto adipisci. Fuga,
         maiores nobis. Sunt aliquid minima quas amet. Lorem ipsum dolor sit amet
@@ -27,24 +26,28 @@
         qui aspernatur, saepe temporibus modi consequatur voluptatem provident
         repellendus distinctio. Quaerat cum ad esse ipsa iure.
       </p>
-    </div>
-  
+    </div> -->
+
     <div class="projects-main">
       <div class="mega_feature">
         <img src="project-assets/cit-notes.png" />
+        <div id="overlay"></div>
       </div>
-      <div class="big_feature">
-        <img src="/project-assets/pokemon-cards.png">
-        </div>
-        <div class="mid_feature">
-          <img src="/project-assets/item-manager.png">
-        </div>
-        <div class="small_feature">
-          </div>
-        </div>
-      </div>
-      <div class="mid_feature"></div>
-    </div>
 
+      <div class="big_feature">
+        <img src="/project-assets/pokemon-cards.png" />
+        <div id="overlay"></div>
+      </div>
+
+      <div class="mid_feature">
+        <img src="/project-assets/item-manager.png" />
+        <div id="overlay"></div>
+      </div>
+
+      <div class="small_feature" style="text-align: center">
+        <div id="overlay"></div>
+        <h1>coming soon</h1>
+      </div>
+    </div>
   </body>
 </html>

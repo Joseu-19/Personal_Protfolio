@@ -3,13 +3,10 @@
  padding: 0;
  box-sizing: border-box;
 }
-html, body {
- height: 100%;
- background-color: #dfbc99;
+ body {
+ background-color: #3b3b3b;
 }
-h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
-}
+
 
 header{
     position: relative;
@@ -33,30 +30,41 @@ header a{
 
 .aboutmeWrapper{
     position: relative;
-    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
-.long-aboutme{
+#long-aboutme{
+    position: absolute;
     background-color: green;
     width:40vw;
-    position: absolute;
-    top: 30%;
-    left: 320px;
+    top: 100%;
+    font-size: 30px;  
 }
 
-
+#circle-picture{
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background-color: aqua;
+}
 
 .projects-main {
+    position: relative;
     width: fit-content;
     height:auto;
     margin:60px auto; 
     gap: 10px; 
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 28em);
     grid-auto-rows: 350px;
     overflow: hidden;
     background-color: black;
+    /* top: 20rem; */
  }
 
  .projects-main > * {
@@ -93,6 +101,31 @@ header a{
     background-color: bisque;
     overflow: hidden;
 }
+
+.mega_feature img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+ }
+
+ #overlay{
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: black; 
+ opacity: .4;
+ transition: opacity 1.5s ease-out;
+ }
+
+
+ #overlay:hover{
+    opacity: .1;
+ }
+
+
 
  .small_feature img{
     position: absolute;
