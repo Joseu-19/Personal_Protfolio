@@ -16,31 +16,53 @@
     </header>
     <h1 style="text-align: center">About Me</h1>
 
-    <!-- <div class="aboutmeWrapper">
-      <div id="circle-picture"></div>
-      <p id="long-aboutme">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        amet perferendis porro tempora, odit maxime iusto adipisci. Fuga,
-        maiores nobis. Sunt aliquid minima quas amet. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Omnis rem fuga laborum tenetur inventore,
-        qui aspernatur, saepe temporibus modi consequatur voluptatem provident
-        repellendus distinctio. Quaerat cum ad esse ipsa iure.
-      </p>
-    </div> -->
-
     <div class="projects-main">
       <div class="mega_feature">
-        <img src="project-assets/cit-notes.png" />
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="/project-assets/pokemon-cards2.png" />
+            <div class="caption">Caption for Image 1</div>
+          </div>
+          <div class="carousel-item">
+            <img src="/project-assets/pokemon-cards.png" />
+            <div class="caption"><h1>hello
+            </h1></div>
+          </div>
+          <!-- ... more carousel items ... -->
+    
+          <img src="/icons/arrow.png" class="prevButton" />
+          <img src="/icons/arrow.png" class="nextButton" />
+        </div>
         <div id="overlay"></div>
       </div>
 
       <div class="big_feature">
-        <img src="/project-assets/pokemon-cards.png" />
+        <div class="carousel">
+          <img
+            src="/project-assets/cit-notes.png"
+            class="carousel-item active"
+          />
+          <img src="/project-assets/pokemon-cards2.png" class="carousel-item" />
+          <img src="/project-assets/pokemon-cards.png" class="carousel-item" />
+
+          <img src="/icons/arrow.png" class="prevButton" />
+          <img src="/icons/arrow.png" class="nextButton" />
+        </div>
         <div id="overlay"></div>
       </div>
 
       <div class="mid_feature">
-        <img src="/project-assets/item-manager.png" />
+        <div class="carousel">
+          <img
+            src="/project-assets/cit-notes.png"
+            class="carousel-item active"
+          />
+          <img src="/project-assets/pokemon-cards2.png" class="carousel-item" />
+          <img src="/project-assets/pokemon-cards.png" class="carousel-item" />
+
+          <img src="/icons/arrow.png" class="prevButton" />
+          <img src="/icons/arrow.png" class="nextButton" />
+        </div>
         <div id="overlay"></div>
       </div>
 
@@ -49,5 +71,6 @@
         <h1>coming soon</h1>
       </div>
     </div>
+  </div>
   </body>
 </html>

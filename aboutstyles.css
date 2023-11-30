@@ -4,7 +4,7 @@
  box-sizing: border-box;
 }
  body {
- background-color: #3b3b3b;
+ background-color: #000000;
 }
 
 
@@ -25,33 +25,6 @@ header a{
     margin-right: 15px;
 }
 
-
-/* //projects goes here */
-
-.aboutmeWrapper{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-#long-aboutme{
-    position: absolute;
-    background-color: green;
-    width:40vw;
-    top: 100%;
-    font-size: 30px;  
-}
-
-#circle-picture{
-    height: 320px;
-    width: 320px;
-    border-radius: 50%;
-    background-color: aqua;
-}
-
 .projects-main {
     position: relative;
     width: fit-content;
@@ -63,7 +36,7 @@ header a{
     grid-template-columns: repeat(3, 28em);
     grid-auto-rows: 350px;
     overflow: hidden;
-    background-color: black;
+    /* background-color: black; */
     /* top: 20rem; */
  }
 
@@ -83,7 +56,6 @@ header a{
     background-color: bisque;
     overflow: hidden;
 }
-
 
  .big_feature{
     position: relative;
@@ -120,12 +92,9 @@ header a{
  transition: opacity 1.5s ease-out;
  }
 
-
  #overlay:hover{
     opacity: .1;
  }
-
-
 
  .small_feature img{
     position: absolute;
@@ -153,8 +122,68 @@ header a{
     transform: scale(1);
  }
 
+ /* carousel start*/
+.carousel{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+.carousel-item{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
 
+.carousel-item.active{
+    display: block;
+}
 
+/* next/preview buttons */
 
+.carousel .prevButton, .carousel .nextButton {
+    position: absolute;
+    z-index: 10;
+    top: 94%;
+    cursor: pointer;
+}
 
+.carousel .prevButton{
+    transform: rotate(90deg);
+    right: 50px;
+}
+
+.carousel .nextButton{
+    transform: rotate(-90deg);
+    right: 10px;
+}
+
+.carousel .nextButton img{
+    
+}
+
+.carousel .prevButton, .carousel .nextButton{
+    width: 30px;
+    height: 30px;
+}
+
+/* caption styles */
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.caption {
+    z-index: 2; // Ensure it's above the image
+    /* ... other styles ... */
+}
