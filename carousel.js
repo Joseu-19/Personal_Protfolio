@@ -34,3 +34,11 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     showCurrentItem()
 });
 
+
+// start of caption hide on mouseleave event
+let activeBox = document.querySelector('carousel-item').addEventListener('mouse');
+let caption = document.querySelector('.caption').addEventListener('mouseleave', ()=>{
+
+
+
+});

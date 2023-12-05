@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
 }
 
-
 .main_content{
     height: 100vh;
     width: 100%;
@@ -39,6 +38,30 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #e600009c;
 }
 
+/* custom svg curve */
+.custom-shape-divider-top-1701732999 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1701732999 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 133px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1701732999 .shape-fill {
+    fill: #63FFB8;
+}
+
+/* end of svg styles */
 
 #frontText{
     position: absolute;
