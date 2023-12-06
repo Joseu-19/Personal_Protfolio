@@ -14,6 +14,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         currentItem = (currentItem + 1) % items.length;
         showCurrentItem();
     }
+//   this fucntion will make the back and forth buttons hide when mouse is not over div
 
     function start_slideshow(){
         slideInterval = setInterval(nextItem, 5000);
@@ -21,9 +22,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 
     function stop_slideshow(){
     clearInterval(slideInterval);}
-
-    carousel.addEventListener('mouseenter', start_slideshow);
-    carousel.addEventListener('mouseleave', stop_slideshow);
+    let overlay = document.querySelector('#overlay');
+    overlay.addEventListener('mouseenter', start_slideshow);
+    overlay.addEventListener('mouseleave', stop_slideshow);
 
 
     function prevItem() {
@@ -36,9 +37,3 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 
 
 // start of caption hide on mouseleave event
-let activeBox = document.querySelector('carousel-item').addEventListener('mouse');
-let caption = document.querySelector('.caption').addEventListener('mouseleave', ()=>{
-
-
-
-});
