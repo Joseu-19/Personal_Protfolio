@@ -17,6 +17,32 @@ header{
     align-items: center;
 }
 
+.intro-section{
+position: relative;
+height: 400px;
+height: fit-content;
+background-color: greenyellow;
+}
+
+.intro-section img{
+    height: 400px;
+    width: 400px;
+    position:absolute;
+    left:30px;
+    border-radius: 30px;
+}
+
+.intro-section p{
+    position: relative;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 600px;
+    height: fit-content;
+    top: 10%;
+    left: 35%;
+    background-color: azure;
+}
+
 header a{
     color: white;
     font-size: 20px;
